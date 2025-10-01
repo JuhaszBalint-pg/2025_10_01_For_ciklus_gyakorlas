@@ -7,7 +7,7 @@ print ("Adj meg egy egész számot!")
 x = int (input ("") )
 y = 0
 
-for i in range(x + 1):
+for i in range(x):
     y += i
     
-print (f"A 0 és megadott szám közötti számok összege: {y}")
+print (f"A 0 és megadott szám közötti számok összege: {y-1}")
