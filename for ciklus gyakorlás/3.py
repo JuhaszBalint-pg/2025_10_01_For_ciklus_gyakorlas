@@ -4,13 +4,13 @@ Készíts egy programot, amely egy előre meghatározott jelszót vár el a felh
 Ha eltalálja a jelszót, jelenjen meg egy üzenet, hogy „Sikeres belépés”.
 """
 
-jelszo = input(print ("Adja meg a jelszót! "))
-helyes = "kakaoscsiga"
+a = True
 
-while jelszo == helyes:
-    if jelszo == helyes:
-        print ("Helyes jelszó, belépés engedélyezése")
-        break
-
-    elif jelszo != helyes:
+while a:
+    jelszo = input("Adja meg a jelszót! ")
+    if jelszo == "kakaoscsiga":
+        print ("Helyes jelszó!")
+        a = False
+    
+    else:
         print ("Próbálkozzon újra!")
